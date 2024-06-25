@@ -1,0 +1,9 @@
+<resources>
+    
+    <!-- Defines the base application theme, inheriting from Theme.AppCompat.DayNight.NoActionBar. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Specifies the background drawable for EditTexts within the app theme. -->
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+    </style>
+
+</resources>

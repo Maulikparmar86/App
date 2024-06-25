@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "952067818762",
+    "firebase_url": "https://motion-d4e51-default-rtdb.firebaseio.com",
+    "project_id": "motion-d4e51",
+    "storage_bucket": "motion-d4e51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952067818762:android:6f7e57de0442d782f366f3",
+        "android_client_info": {
+          "package_name": "com.testawspinpoint"
+        }
+      },
+      "oauth_clients": [
+        {
+          "client_id": "952067818762-jpdck71otviftd6f3b9cd7ru25tvh9pl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.testawspinpoint",
+            "certificate_hash": "f36890de78378f91b776e0fbc4dbc458ccc73954"
+          }
+        },
+        {
+          "client_id": "952067818762-lpca34cqprgk3hvfrbh4e16n2dgrlc1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_keys": [
+        {
+          "current_key": "AIzaSyCQ2j4zlPr7YCXc45wRbrIMws7kq6P0RF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_clients": [
+            {
+              "client_id": "952067818762-lpca34cqprgk3hvfrbh4e16n2dgrlc1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

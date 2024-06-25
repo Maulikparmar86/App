@@ -1,0 +1,4 @@
+<resources>
+    <!-- Defines the application name used in various places throughout the app. -->
+    <string name="app_name">TestAwsPinpoint</string>
+</resources>

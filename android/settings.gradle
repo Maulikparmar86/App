@@ -1,0 +1,14 @@
+// Set the root project name
+rootProject.name = 'TestAwsPinpoint'
+
+// Apply native modules Gradle script from the React Native community
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle")
+
+// Apply settings for native module integration
+applyNativeModulesSettingsGradle(settings)
+
+// Include the app module in the build
+include ':app'
+
+// Include the React Native Gradle plugin in the build
+includeBuild('../node_modules/react-native-gradle-plugin')

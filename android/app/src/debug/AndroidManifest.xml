@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.yourappname">
+
+    <!-- Application-level manifest declarations -->
+    <application
+            android:usesCleartextTraffic="true"
+            tools:targetApi="28"
+            tools:ignore="GoogleAppIndexingWarning">
+        
+        <!-- Activities, services, receivers, etc., go here -->
+
+    </application>
+
+</manifest>

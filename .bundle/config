@@ -1,0 +1,7 @@
+# Environment Variables for Ruby Application Configuration
+
+# Specifies the path where the bundled gems are stored
+bundle_path: "vendor/bundle"
+
+# Forces Bundler to ignore the host platform and use the specified Ruby platform
+bundle_force_ruby_platform: 1

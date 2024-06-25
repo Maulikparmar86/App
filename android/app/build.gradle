@@ -1,0 +1,67 @@
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+apply plugin: 'com.google.gms.google-services'
+
+/**
+ * Customizes the React Native Android app configuration.
+ * Uncomment and adjust the configurations as needed.
+ */
+react {
+    // Configuration settings for folders, variants, bundling, and Hermes commands.
+    // Example configurations are provided; uncomment and modify as necessary.
+}
+
+/**
+ * Enables ProGuard in release builds for minifying Java bytecode.
+ */
+def enableProguardInReleaseBuilds = false
+
+/**
+ * Specifies the JavaScriptCore (JSC) flavor to use.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+android {
+    // Android-specific configurations.
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.testawspinpoint"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    // Dependencies for the React Native Android app.
+    implementation("com.facebook.react:react-android")
+
+    // Conditional dependency based on Hermes being enabled.
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
+    }
+}
+
+// Applies native modules configuration.
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
